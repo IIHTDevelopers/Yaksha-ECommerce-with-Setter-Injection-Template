@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Defining Product bean with setter injection -->
+	<bean id="product1" class="com.yaksha.assignment.Product">
+		<property name="name" value="Laptop" />
+		<property name="price" value="1000.0" />
+	</bean>
+
+	<bean id="product2" class="com.yaksha.assignment.Product">
+		<property name="name" value="Smartphone" />
+		<property name="price" value="500.0" />
+	</bean>
+
+	<!-- Defining Order bean with setter injection -->
+	<bean id="order1" class="com.yaksha.assignment.Order">
+		<property name="orderId" value="ORD12345" />
+		<property name="totalAmount" value="0.0" />
+	</bean>
+
+	<!-- Defining Customer bean with setter injection -->
+	<bean id="customer1" class="com.yaksha.assignment.Customer">
+		<property name="customerId" value="CUST001" />
+		<property name="name" value="John Doe" />
+	</bean>
+
+</beans>
